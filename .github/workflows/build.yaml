@@ -1,0 +1,44 @@
+name: CodeSniffer DotNetVersion Sniffer Build
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.15
+        with:
+          versionSpec: '5.x'
+
+      - name: Determine Version
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.15
+        with:
+          useConfigFile: true
+
+      - name: Setup .NET Core SDK 7
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Create plugin ZIP
+        run: zip -qq -r output.zip *
+        working-directory: output
+
+      - name: Upload plugin ZIP
+        uses: actions/upload-artifact@v3
+        with:
+          name: Sniffer.DotNetVersion.${{ steps.gitversion.outputs.nuGetVersion }}.zip
+          path: output/output.zip
