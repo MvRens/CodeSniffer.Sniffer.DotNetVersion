@@ -34,11 +34,11 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Create plugin ZIP
-        run: zip -qq -r output.zip *
-        working-directory: output
+        run: zip -qq -r plugin.zip bin/Release/net7.0/*
+        working-directory:
 
       - name: Upload plugin ZIP
         uses: actions/upload-artifact@v3
         with:
           name: Sniffer.DotNetVersion.${{ steps.gitversion.outputs.nuGetVersion }}.zip
-          path: output/output.zip
+          path: plugin.zip
