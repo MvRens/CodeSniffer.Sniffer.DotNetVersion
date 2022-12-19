@@ -33,8 +33,11 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
 
+      - name: Run tests
+        run: dotnet test
+
       - name: Upload plugin ZIP
         uses: actions/upload-artifact@v3
         with:
           name: Sniffer.DotNetVersion.${{ steps.gitversion.outputs.nuGetVersion }}.zip
-          path: bin/Release/net7.0/*
+          path: Sniffer.DotNetVersion/bin/Release/net7.0/*
