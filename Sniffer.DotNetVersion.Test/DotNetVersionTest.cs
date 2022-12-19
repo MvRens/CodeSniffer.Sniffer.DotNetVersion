@@ -22,7 +22,7 @@ namespace Sniffer.DotNetVersion.Test
                 .WriteTo.TestOutput(testOutputHelper)
                 .CreateLogger();
 
-            testDataPath = Path.GetFullPath("..\\..\\..\\..\\data", Assembly.GetExecutingAssembly().Location);
+            testDataPath = Path.GetFullPath(Path.Combine("..", "..", "..", "..", "data"), Assembly.GetExecutingAssembly().Location);
             if (!Directory.Exists(testDataPath))
                 throw new Exception($"Test data path not found: {testDataPath}");
         }
