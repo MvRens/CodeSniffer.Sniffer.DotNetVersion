@@ -7,11 +7,6 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-    <BaseOutputPath>$(APPDATA)\CodeSniffer\Plugins\DotNetVersion\</BaseOutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="CodeSniffer.Core" Version="0.1.0-develop0064">
       <ExcludeAssets>runtime</ExcludeAssets>
