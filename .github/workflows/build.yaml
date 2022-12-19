@@ -27,9 +27,6 @@ jobs:
         with:
           dotnet-version: 7
 
-      - name: List working copy files
-        run: find . -type f
-
       - name: Install dependencies
         run: dotnet restore
 

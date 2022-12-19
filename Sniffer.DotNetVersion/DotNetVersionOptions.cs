@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Sniffer.DotNetversion
+namespace Sniffer.DotNetVersion
 {
     [JsonSerializable(typeof(DotNetVersionOptions))]
     public class DotNetVersionOptions

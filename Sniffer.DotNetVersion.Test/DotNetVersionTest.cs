@@ -4,7 +4,7 @@ using CodeSniffer.Core.Sniffer;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Serilog;
-using Sniffer.DotNetversion;
+using Sniffer.DotNetVersion;
 using Xunit;
 using Xunit.Abstractions;
 

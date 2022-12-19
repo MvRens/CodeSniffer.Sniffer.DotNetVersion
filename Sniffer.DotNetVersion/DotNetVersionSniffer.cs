@@ -5,7 +5,7 @@ using CodeSniffer.SnifferLib.Matchers;
 using CodeSniffer.SnifferLib.VsProjects;
 using Serilog;
 
-namespace Sniffer.DotNetversion
+namespace Sniffer.DotNetVersion
 {
     public class DotNetVersionSniffer : ICsSniffer
     {

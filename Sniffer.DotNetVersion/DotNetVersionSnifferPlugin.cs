@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+﻿ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using CodeSniffer.Core.Plugin;
@@ -6,7 +6,7 @@ using CodeSniffer.Core.Sniffer;
 using JetBrains.Annotations;
 using Serilog;
 
-namespace Sniffer.DotNetversion
+namespace Sniffer.DotNetVersion
 {
     [CsPlugin("fe7d8b97-efd3-44c2-81b6-5f86c0c5f684", ".NET target framework version")]
     [UsedImplicitly]

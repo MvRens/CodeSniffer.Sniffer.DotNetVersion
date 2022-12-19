@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sniffer.DotNetversion\Sniffer.DotNetversion.csproj" />
+    <ProjectReference Include="..\Sniffer.DotNetVersion\Sniffer.DotNetVersion.csproj" />
   </ItemGroup>
 
 </Project>

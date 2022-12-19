@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sniffer.DotNetversion", "Sniffer.DotNetversion\Sniffer.DotNetversion.csproj", "{E872E10A-8E3E-4A84-9752-6B1A279846CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sniffer.DotNetVersion", "Sniffer.DotNetVersion\Sniffer.DotNetVersion.csproj", "{E872E10A-8E3E-4A84-9752-6B1A279846CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniffer.DotNetVersion.Test", "Sniffer.DotNetVersion.Test\Sniffer.DotNetVersion.Test.csproj", "{527BAFC8-F1CB-4B1D-83F6-A34CC3A19653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sniffer.DotNetVersion.Test", "Sniffer.DotNetVersion.Test\Sniffer.DotNetVersion.Test.csproj", "{527BAFC8-F1CB-4B1D-83F6-A34CC3A19653}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

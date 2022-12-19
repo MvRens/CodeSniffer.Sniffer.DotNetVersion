@@ -1,4 +1,4 @@
 {
   "ContainerId": "e3703e0a-5159-4e4d-bab5-e93bae4f7906",
-  "EntryPoint": "Sniffer.DotNetversion.dll"
+  "EntryPoint": "Sniffer.DotNetVersion.dll"
 }
